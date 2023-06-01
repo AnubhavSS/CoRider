@@ -19,7 +19,7 @@ const ref=useRef(null)
 
 const fetchChats = async (page) => {
   try {
-    const response = await fetch(`http://3.111.128.67/assignment/chat?page=${page}`);
+    const response = await fetch(`https://qa.corider.in/assignment/chat?page=${page}`);
     if (!response.ok) {
       throw new Error('Request failed');
     }
